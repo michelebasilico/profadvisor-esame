@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="RegisterFragment"
+
+
+    >
+
+
+    <EditText
+        android:id="@+id/register_pass2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/register_pass"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="36dp"
+        android:background="@drawable/input"
+        android:drawableLeft="@drawable/private_32"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Conferma Password"
+        android:inputType="textPassword"
+        android:lineSpacingExtra="12sp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_email" />
+
+    <ImageView
+        android:id="@+id/register_logo"
+        android:layout_width="168dp"
+        android:layout_height="159dp"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/logo_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/professor_iconorange" />
+
+    <ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="229dp"
+        android:layout_height="63dp"
+        android:layout_below="@+id/register_logo"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.279"
+        app:srcCompat="@drawable/picturetopeople_org_78536336e3b72ee256f6ad177333d50aee1dd828fcf1fd004a" />
+
+    <EditText
+        android:id="@+id/register_email"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/register_logo"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/input"
+        android:drawableLeft="@drawable/emailbuona"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Email..."
+        android:inputType="textEmailAddress"
+        android:lineSpacingExtra="12sp"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_image"
+        app:layout_constraintVertical_bias="0.131" />
+
+    <EditText
+        android:id="@+id/register_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/register_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/input"
+        android:drawableLeft="@drawable/private_32"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:lineSpacingExtra="12sp"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/register_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_pass2"
+        app:layout_constraintVertical_bias="0.029" />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_pass2"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_orange_dark"
+        android:text="Registrati"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.844" />
+
+    <include
+        android:id="@+id/register_progressBar"
+        android:visibility="gone"
+        layout="@layout/fragment_loading"
+
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

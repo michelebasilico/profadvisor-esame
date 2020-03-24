@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/unProfFragment"
+        android:name="com.example.profadvisor.UnProfFragment"
+        android:label="fragment_un_prof"
+        tools:layout="@layout/fragment_un_prof" >
+        <action
+            android:id="@+id/action_unProfFragment_to_recensioneFragment"
+            app:destination="@id/recensioneFragment" />
+        <action
+            android:id="@+id/action_unProfFragment_to_analisiProfFragment"
+            app:destination="@id/analisiProfFragment" />
+        <action
+            android:id="@+id/action_unProfFragment_to_profFragment"
+            app:destination="@id/profFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profFragment"
+        android:name="com.example.profadvisor.ProfFragment"
+        android:label="fragment_prof"
+        tools:layout="@layout/fragment_prof">
+        <action
+            android:id="@+id/action_profFragment_to_unProfFragment"
+            app:destination="@id/unProfFragment" />
+        <action
+            android:id="@+id/action_profFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.profadvisor.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_profFragment"
+            app:destination="@id/profFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.profadvisor.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_profFragment"
+            app:destination="@id/profFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/recensioneFragment"
+        android:name="com.example.profadvisor.RecensioneFragment"
+        android:label="fragment_recensione"
+        tools:layout="@layout/fragment_recensione" >
+        <action
+            android:id="@+id/action_recensioneFragment_to_questionarioFragment"
+            app:destination="@id/questionarioFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/analisiProfFragment"
+        android:name="com.example.profadvisor.AnalisiProfFragment"
+        android:label="fragment_analisi_prof"
+        tools:layout="@layout/fragment_analisi_prof" >
+        <action
+            android:id="@+id/action_analisiProfFragment_to_pagina1Fragment"
+            app:destination="@id/pagina1Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pagina1Fragment"
+        android:name="com.example.profadvisor.Pagina1Fragment"
+        android:label="fragment_pagina1"
+        tools:layout="@layout/fragment_pagina1" >
+        <action
+            android:id="@+id/action_pagina1Fragment_to_pagina2Fragment"
+            app:destination="@id/pagina2Fragment" />
+        <action
+            android:id="@+id/action_pagina1Fragment_to_analisiProfFragment"
+            app:destination="@id/analisiProfFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pagina2Fragment"
+        android:name="com.example.profadvisor.Pagina2Fragment"
+        android:label="fragment_pagina2"
+        tools:layout="@layout/fragment_pagina2" >
+        <action
+            android:id="@+id/action_pagina2Fragment_to_pagina1Fragment"
+            app:destination="@id/pagina1Fragment" />
+        <action
+            android:id="@+id/action_pagina2Fragment_to_unProfFragment"
+            app:destination="@id/unProfFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questionarioFragment"
+        android:name="com.example.profadvisor.QuestionarioFragment"
+        android:label="fragment_questionario"
+        tools:layout="@layout/fragment_questionario" >
+        <action
+            android:id="@+id/action_questionarioFragment_to_unProfFragment"
+            app:destination="@id/unProfFragment" />
+    </fragment>
+</navigation>

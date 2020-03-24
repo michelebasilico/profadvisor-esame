@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name" translatable="false">ProfAdvisor</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="testo_info" translatable="false">persone pensano che sia...</string>
+    <string name="search_hint" translatable="false">Cerca un professore..</string>
+</resources>

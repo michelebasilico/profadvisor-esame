@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".LoginFragment">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="168dp"
+        android:layout_height="159dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/professor_iconorange" />
+
+    <EditText
+        android:id="@+id/login_Email"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/logo_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/input"
+        android:drawableLeft="@drawable/emailbuona"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:fontFamily="@font/open_sans_italic"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:lineSpacingExtra="8sp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/login_Pass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/login_Pass"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/login_Email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/input"
+        android:drawableLeft="@drawable/private_32"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:fontFamily="@font/open_sans_italic"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:lineSpacingExtra="8sp"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_image" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/login_Pass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="9dp"
+        android:background="@android:color/holo_orange_dark"
+        android:fontFamily="@font/open_sans_italic"
+        android:text="Accedi"
+        android:textColor="@android:color/background_light"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@+id/login_register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_Pass" />
+
+    <TextView
+        android:id="@+id/login_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_button"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/open_sans_bold_italic"
+        android:text="Non hai un account? Registrati"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="229dp"
+        android:layout_height="63dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:src="@drawable/logo1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        tools:srcCompat="@drawable/picturetopeople_org_78536336e3b72ee256f6ad177333d50aee1dd828fcf1fd004a" />
+
+    <include
+        android:id="@+id/login_progressBar"
+        android:visibility="gone"
+        layout="@layout/fragment_loading"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

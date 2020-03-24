@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "431427758021",
+    "firebase_url": "https://profadvisor-75c74.firebaseio.com",
+    "project_id": "profadvisor-75c74",
+    "storage_bucket": "profadvisor-75c74.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:431427758021:android:7ce0a983b1d33391080dac",
+        "android_client_info": {
+          "package_name": "com.example.profadvisor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "431427758021-7k7f77o57bg0fpidvlhqd9coulpn9jag.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBR-59OtZvxsmeimDo_KuXadRt1n76dLAg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "431427758021-7k7f77o57bg0fpidvlhqd9coulpn9jag.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
